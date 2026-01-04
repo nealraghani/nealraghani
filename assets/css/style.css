@@ -46,8 +46,8 @@
    * typography
    */
 
-  --ff-recoleta: "Recoleta", serif;
-  --ff-gordita: "Gordita", sans-serif;
+  --ff-wellingtons: "Wellingtons", serif;
+  --ff-louis_george_cafe: "Louis George Cafe", sans-serif;
   
   --fs-1: 6rem;
   --fs-2: 5rem;
@@ -140,7 +140,7 @@ ion-icon { pointer-events: none; }
 address { font-style: normal; }
 
 html {
-  font-family: var(--ff-gordita);
+  font-family: var(--ff-louis_george_cafe);
   font-size: 10px;
   scroll-behavior: smooth;
 }
@@ -184,7 +184,7 @@ body.active { overflow: hidden; }
 .h4,
 .h5,
 .h6 {
-  font-family: var(--ff-recoleta);
+  font-family: var(--ff-wellingtons);
   line-height: 1.2;
 }
 
