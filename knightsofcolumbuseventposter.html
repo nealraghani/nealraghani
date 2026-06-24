@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Neal Raghani - Home</title>
+  <meta name="title" content="Neal Raghani">
+  <meta name="description" content="This is the portfolio of Bay Area visual artist Neal Raghani.">
+
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="./assets/css/pastapalooza.css">
+
+  <link rel="stylesheet" href="./assets/font/font.css">
+
+  <link rel="preload" as="image" href="./assets/images/loading.svg">
+  <link rel="preload" as="image" href="./assets/images/loading-circle.svg">
+
+</head>
+
+<body class="active" id="top">
+
+  <div class="loading" data-loading>
+    <img src="./assets/images/loading.svg" width="55" height="55" alt="loading" class="img">
+    <img src="./assets/images/loading-circle.svg" width="70" height="70" alt="" class="circle">
+  </div>
+
+
+<header class="header" data-header>
+    <div class="container">
+
+      <a href="index.html" class="logo">
+        <img src="./assets/images/logo.svg" width="40" height="40" alt="Neal Raghani home">
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <img src="./assets/images/menu.svg" width="17" height="17" alt="menu icon">
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/nav-logo.svg" width="140" height="40" alt="Neal Raghani home" class="img">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <span class="span one"></span>
+            <span class="span two"></span>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="artwork.html" class="navbar-link" data-nav-link>ARTWORK</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="graphicdesign.html" class="navbar-link" data-nav-link>GRAPHIC DESIGN</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="webdesign.html" class="navbar-link" data-nav-link>WEBSITE DESIGN</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="powerpointdesign.html" class="navbar-link" data-nav-link>POWERPOINT DESIGN</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="biocv.html" class="navbar-link" data-nav-link>BIO</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="contact.html" class="navbar-link" data-nav-link>CONTACT</a>
+          </li>
+
+        </ul>
+
+        <address class="navbar-text">
+            © 2025 by Neal Raghani. All content and images on this site are the property of Neal Raghani
+        </address>
+
+        </nav>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+<main>
+  <article>
+
+    <section class="section about" id="about" aria-label="about me">
+      <div class="container">
+    
+        <div class="about-content">
+          <h1 class="h2 section-title-main" data-reveal="right">
+            EVENT POSTER
+          </h1>
+          
+          <div class="text-divider" data-reveal="right"></div>
+          
+          <h2 class="h2 section-title-sub" data-reveal="right">
+            Knights of Columbus
+          </h2>
+    
+          <div class="wrapper" data-reveal="right">
+            <p class="section-text">
+              Designed for a charity event hosted by Knights of Columbus. Titled "Pastapalooza", this Italian dinner and auction invited locals, officials, and restaraunt owners in Carmel-by-the-Sea to raise money for charitable causes recognized by the town. 
+            </p>
+          </div>
+    
+          <div class="project-divider"></div>
+        </div>
+    
+      </div>
+    </section>
+
+    <section class="section slider" aria-label="project-slider" data-reveal>
+      <div class="container">
+        <div class="slider-container">
+          <div class="mySlides fade">
+            <div class="img-holder has-before" style="--width: 1973; --height: 3771;">
+              <img src="./assets/images/Pastapalooza_Poster.jpg" width="1973" height="3771" alt="Project 1" class="img-cover">
+            </div>
+          </div>
+          <div class="mySlides fade">
+            <div class="img-holder has-before" style="--width: 1920; --height: 1080;">
+              <img src="./assets/images/Pastapalooza_Poster_Mockup.jpg" width="1920" height="1080" alt="Project 2" class="img-cover">
+            </div>
+          </div>
+          <button class="prev slider-btn" onclick="plusSlides(-1)" aria-label="Previous slide">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </button>
+          <button class="next slider-btn" onclick="plusSlides(1)" aria-label="Next slide">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </button>
+        </div>
+
+        <div class="slider-dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+      </div>
+    </section>
+
+  </article>
+</main>
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>0%</a>
+
+
+
+
+
+  <div class="cursor" data-cursor></div>
+
+
+
+
+
+  <script src="./assets/js/subsections.js"></script>
+
+</body>
+
+</html>

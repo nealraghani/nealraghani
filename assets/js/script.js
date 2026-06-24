@@ -237,34 +237,84 @@ document.body.addEventListener("mouseover", function () {
   cursor.classList.remove("disabled");
 });
 
-/**
- * IMAGE SLIDER
- */
-let slideIndex = 1;
-showSlides(slideIndex);
+// /**
+//  * IMAGE SLIDER
+//  */
+// let slideIndex = 1;
+// showSlides(slideIndex);
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+// // Next/previous controls
+// function plusSlides(n) {
+//   showSlides(slideIndex += n);
+// }
+
+// // Thumbnail image controls
+// function currentSlide(n) {
+//   showSlides(slideIndex = n);
+// }
+
+// function showSlides(n) {
+//   let i;
+//   let slides = document.getElementsByClassName("mySlides");
+//   let dots = document.getElementsByClassName("dot");
+//   if (n > slides.length) {slideIndex = 1}
+//   if (n < 1) {slideIndex = slides.length}
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";
+//   }
+//   for (i = 0; i < dots.length; i++) {
+//     dots[i].className = dots[i].className.replace(" active", "");
+//   }
+//   slides[slideIndex-1].style.display = "block";
+//   dots[slideIndex-1].className += " active";
+// }
+
+/**HERO SLIDER */
+const slides = document.querySelectorAll('.slide');
+const thumbs = document.querySelectorAll('.thumb');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+
+let currentSlide = 0;
+const slideInterval = 5000;
+let slideTimer;
+
+function goToSlide(index) {
+    slides[currentSlide].classList.remove('active');
+    thumbs[currentSlide].classList.remove('active');
+    currentSlide = (index + slides.length) % slides.length;
+    slides[currentSlide].classList.add('active');
+    thumbs[currentSlide].classList.add('active');
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function resetTimer() {
+    clearInterval(slideTimer);
+    slideTimer = setInterval(nextHandler, slideInterval);
 }
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+function nextHandler() {
+    goToSlide(currentSlide + 1);
 }
+
+function prevHandler() {
+    goToSlide(currentSlide - 1);
+}
+
+nextBtn.addEventListener('click', () => {
+    nextHandler();
+    resetTimer();
+});
+
+prevBtn.addEventListener('click', () => {
+    prevHandler();
+    resetTimer();
+});
+
+thumbs.forEach((thumb, index) => {
+    thumb.addEventListener('click', () => {
+        goToSlide(index);
+        resetTimer();
+    });
+});
+
+slideTimer = setInterval(nextHandler, slideInterval);

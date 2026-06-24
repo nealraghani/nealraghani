@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Neal Raghani - Home</title>
+  <meta name="title" content="Neal Raghani">
+  <meta name="description" content="This is the portfolio of Bay Area visual artist Neal Raghani.">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/powerpointdesign.css">
+
+  <!-- 
+    - custom font link
+  -->
+  <link rel="stylesheet" href="./assets/font/font.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/loading.svg">
+  <link rel="preload" as="image" href="./assets/images/loading-circle.svg">
+
+</head>
+
+<body class="active" id="top">
+
+  <!-- 
+    -#PRELOADING
+  -->
+  <div class="loading" data-loading>
+    <img src="./assets/images/loading.svg" width="55" height="55" alt="loading" class="img">
+    <img src="./assets/images/loading-circle.svg" width="70" height="70" alt="" class="circle">
+  </div>
+
+
+  <!-- 
+    - #HEADER
+  -->
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="index.html" class="logo">
+        <img src="./assets/images/logo.svg" width="40" height="40" alt="Neal Raghani home">
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <img src="./assets/images/menu.svg" width="17" height="17" alt="menu icon">
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/nav-logo.svg" width="140" height="40" alt="Neal Raghani home" class="img">
+          </a>
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <span class="span one"></span>
+            <span class="span two"></span>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <li class="navbar-item"><a href="artwork.html" class="navbar-link" data-nav-link>ARTWORK</a></li>
+          <li class="navbar-item"><a href="graphicdesign.html" class="navbar-link" data-nav-link>GRAPHIC DESIGN</a></li>
+          <li class="navbar-item"><a href="webdesign.html" class="navbar-link" data-nav-link>WEBSITE DESIGN</a></li>
+          <li class="navbar-item"><a href="powerpointdesign.html" class="navbar-link" data-nav-link>POWERPOINT DESIGN</a></li>
+          <li class="navbar-item"><a href="biocv.html" class="navbar-link" data-nav-link>BIO</a></li>
+          <li class="navbar-item"><a href="contact.html" class="navbar-link" data-nav-link>CONTACT</a></li>
+        </ul>
+
+        <address class="navbar-text">
+            © 2025 by Neal Raghani. All content and images on this site are the property of Neal Raghani
+        </address>
+      </nav>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+  <main>
+    <article>
+
+      <section class="section about" id="about" aria-label="about me">
+        <div class="container">
+          <div class="about-content">
+            <h1 class="h2 section-title-main" data-reveal="right">ART IN THE PUBLIC REALM</h1>
+            <div class="text-divider" data-reveal="right"></div>
+            <h2 class="h2 section-title-sub" data-reveal="right">Fung Collaboratives, Santa Clara University</h2>
+            <div class="wrapper" data-reveal="right">
+              <p class="section-text">
+                Commissioned by contemporary art curator Lance Fung for his 3-part lecture series at Santa Clara University about how art in the public realm positively transforms people and locations. The first in his lecture series, this presentation illustrates the broader definition of art and the qualities of an impactful artwork in a public space. 
+              </p>
+            </div>
+            <div class="project-divider"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDER SECTION -->
+      <section class="section dynamic-slider-section" aria-label="project-slider" data-reveal>
+        <div class="container">
+          
+          <div class="project-position-wrapper" style="margin-bottom: 25px;">
+            <a href="https://drive.google.com/uc?export=download&id=1j7SDKPcatwqgVAkfwLp9tayuteqoIX_x" target="_blank" class="visit-link">DOWNLOAD</a>
+          </div>
+
+          <div class="custom-slider-container">
+            <!-- Slide 1: Video (2880x1612 Aspect Ratio) -->
+            <div class="mySlides fade">
+              <div class="img-holder has-before" style="--width: 2880; --height: 1612;">
+                <video id="sculptureVideo" class="img-cover" autoplay loop muted playsinline>
+                  <source src="./assets/images/Art_in_the_Public_Realm.mov" type="video/mp4">
+                </video>
+              </div>
+            </div>
+              
+            <!-- Slide 2: Image (6000x3375 Aspect Ratio) -->
+            <div class="mySlides fade">
+              <div class="img-holder has-before" style="--width: 6000; --height: 3375;">
+                <img src="./assets/images/What_is_Art_in_the_Public_Realm_download.jpg" width="6000" height="3375" alt="Project Feature" class="img-cover">
+              </div>
+            </div>
+              
+            <!-- Text-based Arrow Anchors -->
+            <!-- <button class="prev slider-btn" onclick="plusSlides(-1)" aria-label="Previous slide">&#10094;</button>
+            <button class="next slider-btn" onclick="plusSlides(1)" aria-label="Next slide">&#10095;</button>
+          </div> -->
+      
+          <div class="slider-dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+  <!-- #BACK TO TOP -->
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>0%</a>
+
+  <!-- #CUSTOM CURSOR -->
+  <div class="cursor" data-cursor></div>
+
+
+  <!-- Original Main Javascript File -->
+  <script src="./assets/js/artinthepublicrealm.js"></script>
+
+</body>
+</html>
