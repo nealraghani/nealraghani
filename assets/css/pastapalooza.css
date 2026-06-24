@@ -2050,12 +2050,13 @@ main {
 .slider-container {
   width: 100%;
   position: relative;
-  max-height: 85vh; /* Expanded vertically to accommodate portrait view better */
+  max-height: 75vh;
 }
 
 .img-holder {
-  max-height: 85vh; /* Match container height boundary */
-  max-width: 100%;
+  max-height: 75vh;
+  height: 100%;      /* Added: Forces the box to adhere strictly to max-height rules */
+  max-width: 100%;   /* Added: Keeps width within container limits */
   width: auto;
   margin: 0 auto;
 }
