@@ -2055,8 +2055,6 @@ main {
 
 .img-holder {
   max-height: 75vh;
-  height: 100%;      /* Added: Forces the box to adhere strictly to max-height rules */
-  max-width: 100%;   /* Added: Keeps width within container limits */
   width: auto;
   margin: 0 auto;
 }
@@ -2108,3 +2106,4 @@ main {
   margin-inline: 0 auto; 
   padding-bottom: 30px;
 }
+
