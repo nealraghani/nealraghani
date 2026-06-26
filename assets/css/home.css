@@ -1826,11 +1826,12 @@ body.active { overflow: hidden; }
     gap: 8px;
     z-index: 10;
 
-    /* NEW: responsive behavior */
     width: 90%;
     max-width: 800px;
     overflow-x: auto;
-    padding-bottom: 5px;
+    
+    /* REVISED: Added 10px horizontal padding to prevent the first/last thumb from clipping */
+    padding: 10px 10px; 
 }
 
 .thumbnail-container::-webkit-scrollbar {
