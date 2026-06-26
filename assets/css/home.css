@@ -1859,9 +1859,11 @@ body.active { overflow: hidden; }
 .thumb:hover { opacity: 1; }
 .thumb.active { opacity: 1; border-color: #fff; transform: scale(1.1); }
 
-/* Mobile Adjustment: Hide captions on very small screens to avoid overlap */
-@media (max-width: 600px) {
-    .caption { display: none; }
+/* Mobile Adjustment: Hide captions on small screens and landscape mobile to avoid overlap */
+@media (max-width: 600px), (max-height: 500px) and (orientation: landscape) {
+    .caption { 
+        display: none !important; 
+    }
 }
 
 /* DESKTOP NAV (always visible) */
