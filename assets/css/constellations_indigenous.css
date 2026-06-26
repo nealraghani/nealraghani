@@ -2119,38 +2119,11 @@ main {
 \*-----------------------------------*/
 
 /* Specific styling for the primary title */
-/*-----------------------------------*\
-  #UPDATED CONTENT SPACING & LINE
-\*-----------------------------------*/
-
-/* Specific styling for the primary title */
-/*-----------------------------------*\
-  #UPDATED CONTENT SPACING & LINE
-\*-----------------------------------*/
-
-/* Specific styling for the primary title */
 .about .section-title-main {
   margin-bottom: 0;
-  font-size: var(--fs-2); /* Keeps the original 5rem size on desktop */
-  display: flex;
-  flex-direction: column; /* Stacks the words beautifully on mobile */
-  align-items: flex-start;
-  gap: 5px;
-}
-
-/* Forces each word to remain fully intact without mid-character breaking */
-.about .section-title-main .title-word {
-  display: inline-block;
-  white-space: nowrap;
-}
-
-/* Mobile Media Query to prevent overflow if 5rem exceeds viewport width */
-@media (max-width: 480px) {
-  .about .section-title-main .title-word {
-    /* Calculates a font size that dynamically scales down ONLY if the 
-       viewport becomes narrower than the word itself, preventing overflow */
-    font-size: min(var(--fs-2), 11.5vw); 
-  }
+  font-size: clamp(2.4rem, 6vw, var(--fs-2)); /* Responsive fluid sizing */
+  overflow-wrap: break-word; /* Forces line breaking if word exceeds container */
+  word-wrap: break-word;
 }
 
 /* Specific styling for the subtitle to give it padding underneath */
@@ -2206,5 +2179,4 @@ main {
 .slider-dots .dot.active-dot, 
 .slider-dots .dot:hover {
   background-color: #717171;
-}
 }
