@@ -294,7 +294,7 @@ body.active { overflow: hidden; }
   width: 100vw;
   height: 100vh;
   background-color: var(--white);
-  z-index: 5;
+  z-index: 100; /* Increased from 5 to 100 */
   transform-origin: bottom;
   transition: 0.5s var(--cubic-in);
   transition-delay: 0.5s;
@@ -1402,7 +1402,7 @@ body.active { overflow: hidden; }
 
 
 
-  /**
+/**
    * CUSTOM CURSOR
    */
 
@@ -1419,7 +1419,7 @@ body.active { overflow: hidden; }
     transform: translate(-50%, -50%) scale(0.35);
     transition: transform 0.35s;
     pointer-events: none;
-    z-index: 6;
+    z-index: 101; /* Increased from 6 to 101 to stay on very top */
   }
 
   .cursor.hovered { transform: translate(-50%, -50%) scale(1.2); }
