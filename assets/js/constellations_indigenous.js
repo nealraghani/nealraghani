@@ -243,7 +243,7 @@ document.body.addEventListener("mouseover", function () {
 
 let slideIndex = 1;
 let sliderTimeout;
-const VIDEO_DURATION_MS = (3 * 60 + 6) * 1000; // 03:06 in milliseconds (186000ms)
+const VIDEO_DURATION_MS = (3 * 60 + 6) * 1000; // 03:48 in milliseconds (228000ms)
 const IMAGE_DURATION_MS = 8000; // 8 seconds
 
 const initSlider = () => {
